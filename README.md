@@ -47,7 +47,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 ## 3. 指令数据集合
 该集合仍在不断更新和扩增中。可在以下链接下载和查看更多数据细节：https://github.com/PhoebusSi/alpaca-CoT/tree/main/data
 ### 数据统计
-![data collection statistics](../figures/图2.png)
+![data collection statistics](./figures/图2.png)
 当前的instruction-finetuning数据集合主要包含以下三个部分：
 - `alpaca_data_cleaned.json`: 包含5万左右英文指令数据
 - `belle_data_cn.json`:  包含50万左右中文指令数据
@@ -73,39 +73,39 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 "w/o CoT" and "w/o CN" 分别表示用在instruction-finetuning期间不采用CoT数据和Chinese instructions。
 
 下图是需要推理能力的问题上的表现：
-![f3](../figures/图3.png)
+![f3](./figures/图3.png)
  
 下图是需要遵循中文指令的问题上的表现：
-![f4](../图4.png)
+![f4](./图4.png)
  
 下图是在较复杂问题上的表现：
-![f5](../图5.png)
+![f5](./图5.png)
 
 从以上样例可以看出，从我们完整数据集collection(英文、中文和CoT指令数据)中微调得到的模型可以显著提高reasoning能力和响应中文指令的能力。
 
 ### 更多能力展示
 
-![ablation-cot](../figures/图6.png)
+![ablation-cot](./figures/图6.png)
 
 
-![ablation-cot](../figures/图8.png)
+![ablation-cot](./figures/图8.png)
 
 ## 对比实验
 
 ### CoT能力
 下图是引入**CoT**能力前(原Alpaca)后(Ours w/CoT)的表现对比:
-![ablation-cot](../figures/图10.png)
+![ablation-cot](./figures/图10.png)
 可以看出，我们的模型不仅可以给出准确的答案，而且还可以给出对应的思考过程。
 
 ### 遵循中文指令的能力
 下图是引入**遵循中文指令**能力前后在中文指令上的表现对比:
-![ablation-cot](../figures/图11.png)
+![ablation-cot](./figures/图11.png)
 其中Alpaca未使用任何中文指令数据集，Belle在更多的中文指令数据集中微调关注multiple-lingual的大语言模型BLOOM。
 可以看出，原模型Alpaca在第一个例子中无法准确识别中文指令，在第三个例子中无法用中文响应中文指令。而我们的模型表现基本与Belle持平。后续，我们将会引入更多中文指令数据，同时我们的repository将分出一个branch专门探究中文交互能力。
 
 
 下图是引入**遵循中文指令**能力前后在英文指令上的表现对比:
-![ablation-cot](../figures/图12.png)
+![ablation-cot](./figures/图12.png)
 可以看出，在中文指令数据集上微调后，并不会对模型follow英文指令造成负面影响。
 
 ## 5.未来工作
