@@ -1,8 +1,8 @@
-# Alpaca-CoT
+# Alpaca-CoT（当羊驼遇上思维链）
 ![](./figures/宣传0.jpg)
 
 项目简称：
-Alpaca-CoT
+Alpaca-CoT（当羊驼遇上思维链）
 
 项目标题：
 Evolving Alpaca: An Empirical Study on Instruction Tuning for Large Language Models
