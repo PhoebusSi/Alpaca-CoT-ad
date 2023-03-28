@@ -109,7 +109,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 可以看出，在中文指令数据集上微调后，并不会对模型follow英文指令造成负面影响。
 
 ## 5.未来工作
-- 集成进来更多的LLMs，如GLM-6B，BLOOM-7B
+- 集成进来更多的LLMs，如ChatGLM-6B，BLOOM-7B
 - 在hugging face上开放接口
 - 收集更多指令数据
 
