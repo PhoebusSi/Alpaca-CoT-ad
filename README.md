@@ -15,7 +15,9 @@ Evolving Alpaca: An Empirical Study on Instruction Tuning for Large Language Mod
 ## 0. ChatGPT背后的技术
 
 LLM: Large Language Models, 指经过大规模预训练且体量较大的语言模型，一般是transformer-based模型。
+
 IFT: Instruction Fine-Tuning，指令微调，指令是指用户传入的目的明确的输入文本，指令微调用以让模型学会遵循用户的指令。
+
 CoT: Chain-of-Thoughts，指令形式的一种特殊情况，包含step-by-step的推理过程。如下图蓝色部分所示。
 
 ![](./figures/cot.jpg)
