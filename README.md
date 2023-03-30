@@ -14,11 +14,11 @@ Evolving Alpaca: An Empirical Study on Instruction Tuning for Large Language Mod
 
 ## 0. ChatGPT背后的技术
 
-LLM: Large Language Models, 指经过大规模预训练且体量较大的语言模型，一般是transformer-based模型。
+LLM: **Large Language Models**, 指经过大规模预训练且体量较大的语言模型，一般是transformer-based模型。
 
-IFT: Instruction Fine-Tuning，指令微调，指令是指用户传入的目的明确的输入文本，指令微调用以让模型学会遵循用户的指令。
+IFT: **Instruction Fine-Tuning**，指令微调，指令是指用户传入的目的明确的输入文本，指令微调用以让模型学会遵循用户的指令。
 
-CoT: Chain-of-Thoughts，指令形式的一种特殊情况，包含step-by-step的推理过程。如下图蓝色部分所示。
+CoT: **Chain-of-Thought**，指令形式的一种特殊情况，包含step-by-step的推理过程。如下图蓝色部分所示。
 
 ![](./figures/cot.jpg)
 
@@ -27,7 +27,7 @@ CoT: Chain-of-Thoughts，指令形式的一种特殊情况，包含step-by-step�
 
 ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的潜力。基于LLaMA[1]等Large Language Models(LLMs)的instruction-tuning研究(如，Alpaca[2])大幅度加速了复现ChatGPT的进程。**Alpaca-CoT**希望在这个研究方向上做出适度的贡献，以推进LLMs的开源进程、降低LLMs研究和使用成本。
 
-具体来说，**Alpaca-CoT**项目旨在探究如何更好地通过instruction-tuning的方式来诱导LLM具备类似ChatGPT的交互和instruction-following能力。为此，我们广泛收集了不同类型的instruction（尤其是Chain-of-Thoughts数据集），并将包含LLaMA、ChatGLM、Bloom等多种LLMs集成进来统一接口。在这基础上，我们基于LLaMA给出了深入细致的实证研究，以供未来工作参考。据我们所知，我们是首个将CoT拓展进Alpaca的工作，因此项目简称为"**Alpaca-CoT**"。
+具体来说，**Alpaca-CoT**项目旨在探究如何更好地通过instruction-tuning的方式来诱导LLM具备类似ChatGPT的交互和instruction-following能力。为此，我们广泛收集了不同类型的instruction（尤其是Chain-of-Thought数据集），并将包含LLaMA、ChatGLM、Bloom等多种LLMs集成进来统一接口。在这基础上，我们基于LLaMA给出了深入细致的实证研究，以供未来工作参考。据我们所知，我们是首个将CoT拓展进Alpaca的工作，因此项目简称为"**Alpaca-CoT**"。
 
 
 热烈欢迎您向我们提供任何未被本项目收集的instruction-tuning及各类tasks数据集（或其来源）。我们将：
@@ -50,7 +50,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 - 2. 我们发布的模型 **_显著提升了CoT(reasoning)推理能力_**。
 - 3. 我们发布的模型 **_显著提升了对中文指令的响应能力_**。
 - 4. 维护了一个仍在不断扩大规模的 **_intruction-finetuning的数据集集合_**。该集合包含了中文、英文和CoT的instruction数据。同时，我们也维护了一个训练自各种instruction数据集的模型checkpoint集合。
-- 5. 集成了**_多种LLMs并统一了调用接口_*，可通过超参轻松切换。目前包含LLaMA, ChatGLM和Bloom，后续将持续加入更多,以供研究者们轻松调用和对比不同LLMs。
+- 5. 集成了**_多种LLMs并统一了调用接口_**，可通过超参轻松切换。目前包含LLaMA, ChatGLM和Bloom，后续将持续加入更多,以供研究者们轻松调用和对比不同LLMs。
 - 6. 提供了详尽透彻的 **_Empirical Study_**，这里的findings可能会对促进未来LLM探索有一定的参考价值。
 
 ## 3. 多接口统一的开源平台
