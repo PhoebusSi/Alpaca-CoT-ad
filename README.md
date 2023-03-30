@@ -74,12 +74,13 @@ python3 -m torch.distributed.launch --nproc_per_node 4  \
 ## 4. 指令数据集合
 该集合仍在不断更新和扩增中。可在以下链接下载和查看更多数据细节：https://github.com/PhoebusSi/alpaca-CoT/tree/main/data
 ### 数据统计
+注意：下图是截止到2.26日收集到的数据集的统计情况，仅作为motivation展示。目前已收集了更多数据集，如金融相关的指令数据集。
 ![data collection statistics](./figures/图2.png)
 当前的instruction-finetuning数据集合主要包含以下三个部分：
 - `alpaca_data_cleaned.json`: 包含5万左右英文指令数据。
 - `CoT_data.json`: 包含9个CoT数据集，共7万条左右数据。（相关的数据集由FLAN[5]发布，我们统一了数据format）
 - `belle_data_cn.json`:  包含50万左右中文指令数据。（相关的中文instruction数据由BELLE[6]发布）
-注意：上图是截止到2.26日收集到的数据集的统计情况，仅作为motivation展示。目前已收集了更多数据集，如金融相关的指令数据集。
+
 
 ### 数据下载
 你可以在[这里](https://huggingface.co/datasets/QingyiSi/Alpaca-CoT/tree/main)下载所有我们已经统一格式后的formatted数据。然后，将下载到的文件全部放到[data](https://github.com/PhoebusSi/alpaca-CoT/tree/main/data) folder。
