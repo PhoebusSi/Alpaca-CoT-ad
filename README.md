@@ -1,4 +1,4 @@
-# 特制你自己的ChatGPT：轻量级、多接口统一的开源LLM-IFT平台
+# 特制自己的ChatGPT: 多接口统一的轻量级LLM-IFT平台
 ![](./figures/宣传0.jpg)
 
 项目简称：
@@ -50,7 +50,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 - 2. 我们发布的模型 **_显著提升了CoT(reasoning)推理能力_**。
 - 3. 我们发布的模型 **_显著提升了对中文指令的响应能力_**。
 - 4. 维护了一个仍在不断扩大规模的 **_intruction-finetuning的数据集集合_**。该集合包含了中文、英文和CoT的instruction数据。同时，我们也维护了一个训练自各种instruction数据集的模型checkpoint集合。
-- 5. 集成了 **_多种LLMs并统一了调用接口_**，可通过超参轻松切换。目前包含LLaMA, ChatGLM和Bloom，后续将持续加入更多,以供研究者们轻松调用和对比不同LLMs。
+- 5. 集成了 **_多种LLMs并统一了调用接口_**，可通过超参轻松切换。目前包含 **LLaMA, ChatGLM和Bloom**，后续将持续加入更多,以供研究者们轻松调用和对比不同LLMs。
 - 6. 提供了详尽透彻的 **_Empirical Study_**，这里的findings可能会对促进未来LLM探索有一定的参考价值。
 
 ## 3. 多接口统一的开源平台
