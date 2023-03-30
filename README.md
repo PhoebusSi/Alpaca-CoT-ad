@@ -32,7 +32,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 
 热烈欢迎您向我们提供任何未被本项目收集的instruction-tuning及各类tasks数据集（或其来源）。我们将：
 - 将这些数据收录并进行统一格式化处理；
-- 用这些数据集instruct fine-tune LLaMA模型（未来将集成更多LLMs），并开源其checkpoint；
+- 用这些数据集instruct fine-tune 一系列的LLM（如llama, ,未来将集成更多LLMs），并开源其checkpoint；
 - 进行广泛的实证研究以探究新收录的数据集的作用。
 
 我们希望我们的项目能够为大型语言模型的开源过程做出适度的贡献，并降低NLP研究人员上手LLM相关研究的门槛。
@@ -63,6 +63,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 # 单卡
 CUDA_VISIBLE_DEVICES=0 python3 uniform_finetune.py --model_type llama --model_name_or_path decapoda-research/llama-7b-hf \
     --data alpaca-belle-cot --lora_target_modules q_proj v_proj 
+    
 # 多卡
 python3 -m torch.distributed.launch --nproc_per_node 4  \
     --nnodes=1 --node_rank=0 --master_addr=xxx --master_port=yyy uniform_finetune.py \
