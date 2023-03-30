@@ -1,4 +1,4 @@
-# Alpaca-CoT（当羊驼遇上思维链）
+# 特制你自己的ChatGPT：轻量级、多接口统一的开源LLM-IFT平台
 ![](./figures/宣传0.jpg)
 
 项目简称：
