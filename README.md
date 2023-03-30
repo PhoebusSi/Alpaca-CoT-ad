@@ -1,12 +1,11 @@
 # 特制自己的ChatGPT: 多接口统一的轻量级LLM-IFT平台
-![](./figures/宣传0.jpg)
+![](./figures/宣传0.png)
 
 项目简称：
 Alpaca-CoT（当羊驼遇上思维链）
 
 项目标题：
-Evolving Alpaca: An Empirical Study on Instruction Tuning for Large Language Models
-
+Alpaca-CoT: An Instruction Fine-Tuning Platform with Instruction Data Collection and Unified Large Lnguage Models Interface
 
 项目链接：
 [https://github.com/PhoebusSi/Alpaca-CoT](https://github.com/PhoebusSi/Alpaca-CoT)
@@ -50,7 +49,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 - 2. 我们发布的模型 **_显著提升了CoT(reasoning)推理能力_**。
 - 3. 我们发布的模型 **_显著提升了对中文指令的响应能力_**。
 - 4. 维护了一个仍在不断扩大规模的 **_intruction-finetuning的数据集集合_**。该集合包含了中文、英文和CoT的instruction数据。同时，我们也维护了一个训练自各种instruction数据集的模型checkpoint集合。
-- 5. 集成了 **_多种LLMs并统一了调用接口_**，可通过超参轻松切换。目前包含 **LLaMA, ChatGLM和Bloom**，后续将持续加入更多,以供研究者们轻松调用和对比不同LLMs。
+- 5. 集成了 **_多种LLMs并统一了调用接口_**，可通过超参轻松切换。目前包含 **LLaMA, ChatGLM**[5]和 **Bloom**[6]，后续将持续加入更多,以供研究者们轻松调用和对比不同LLMs。
 - 6. 提供了详尽透彻的 **_Empirical Study_**，这里的findings可能会对促进未来LLM探索有一定的参考价值。
 
 ## 3. 多接口统一的开源平台
@@ -78,8 +77,8 @@ python3 -m torch.distributed.launch --nproc_per_node 4  \
 ![data collection statistics](./figures/图2.png)
 当前的instruction-finetuning数据集合主要包含以下三个部分：
 - `alpaca_data_cleaned.json`: 包含5万左右英文指令数据。
-- `CoT_data.json`: 包含9个CoT数据集，共7万条左右数据。（相关的数据集由FLAN[5]发布，我们统一了数据format）
-- `belle_data_cn.json`:  包含50万左右中文指令数据。（相关的中文instruction数据由BELLE[6]发布）
+- `CoT_data.json`: 包含9个CoT数据集，共7万条左右数据。（相关的数据集由FLAN[7]发布，我们统一了数据format）
+- `belle_data_cn.json`:  包含50万左右中文指令数据。（相关的中文instruction数据由BELLE[8]发布）
 
 
 ### 数据下载
@@ -150,9 +149,13 @@ python3 -m torch.distributed.launch --nproc_per_node 4  \
 
 [4]: [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/pdf/2106.09685.pdf)
 
-[5]: [FLAN: Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416)
+[5]: [ChatGLM: An Open Bilingual Dialogue Language Model](https://github.com/THUDM/ChatGLM-6B)
 
-[6]: [BELLE: Bloom-Enhanced Large Language model Engine](https://github.com/LianjiaTech/BELLE)
+[6]: [BLOOM: A 176B-Parameter Open-Access Multilingual Language Model](https://arxiv.org/abs/2211.05100)
+
+[7]: [FLAN: Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416)
+
+[8]: [BELLE: Bloom-Enhanced Large Language model Engine](https://github.com/LianjiaTech/BELLE)
 
 
 
