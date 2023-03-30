@@ -20,7 +20,7 @@ IFT: **Instruction Fine-Tuning**，指令微调，指令是指用户传入的目
 
 CoT: **Chain-of-Thought**，指令形式的一种特殊情况，包含step-by-step的推理过程。如下图蓝色部分所示。
 
-![](./figures/cot.jpg)
+![cot](./figures/cot.jpg)
 
 ## 1. 定位
 
