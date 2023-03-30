@@ -69,6 +69,7 @@ python3 -m torch.distributed.launch --nproc_per_node 4  \
     --model_type llama --model_name_or_path decapoda-research/llama-7b-hf \
     --data alpaca-belle-cot --lora_target_modules q_proj v_proj 
 ```
+你可以在[这里](https://huggingface.co/QingyiSi/Alpaca-CoT/tree/main)下载训练自各种类型instruction数据的所有checkponts。然后，在`gernerate.py`中的`LoRA_WEIGHTS`设置成下载路径，即可直接运行模型的inference以查看模型效果。
 
 ## 4. 指令数据集合
 该集合仍在不断更新和扩增中。可在以下链接下载和查看更多数据细节：https://github.com/PhoebusSi/alpaca-CoT/tree/main/data
