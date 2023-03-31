@@ -34,8 +34,8 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 - 用这些数据集instruct fine-tune一系列的LLM（如llama, ChatGLM等），并开源其checkpoint；
 - 进行广泛的实证研究以探究新收录的数据集的作用。
 
-同时也欢迎告诉我们有哪些表现较好的在huggingface上开源LLMs，我们将：
-- 将这些LLMs集成到我们的平台中，可以通过超参切换不同的LLM；
+同时也欢迎您向我们指出(general或特定能力上)表现不错的开源LLM，我们将：
+- 将这些LLM集成到我们的平台中，可以通过超参切换不同的LLM；
 - 开源该模型在我们框架下IFT后的checkpoint。
 
 我们希望我们的项目能够为大型语言模型的开源过程做出适度的贡献，并降低NLP研究人员上手LLM相关研究的门槛。
@@ -54,7 +54,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 - 2. 我们发布的模型 **_显著提升了CoT(reasoning)推理能力_**。
 - 3. 我们发布的模型 **_显著提升了对中文指令的响应能力_**。
 - 4. 维护了一个仍在不断扩大规模的 **_intruction-finetuning的数据集集合_**。该集合包含了中文、英文和CoT、code、story等instruction数据。同时，我们也维护了一个训练自各种instruction数据集的模型checkpoint集合。
-- 5. 集成了 **_多种LLMs并统一了调用接口_**，可通过超参轻松切换。目前包含 **LLaMA, ChatGLM**[5]和 **Bloom**[6]，后续将持续加入更多,以供研究者们轻松调用和对比不同LLMs。
+- 5. 集成了 **_多种LLM并统一了调用接口_**，可通过超参轻松切换。目前包含 **LLaMA, ChatGLM**[5]和 **Bloom**[6]，后续将持续加入更多,以供研究者们轻松调用和对比不同LLMs。
 - 6. 提供了详尽透彻的 **_Empirical Study_**，这里的findings可能会对促进未来LLM探索有一定的参考价值。
 
 ## 3. 多接口统一的开源平台
@@ -148,7 +148,7 @@ python3 -m torch.distributed.launch --nproc_per_node 4  \
 
 
 ## 7. 总结
-在LLM上的instruction-finetuning研究是一个impressive的方向，其加速了复现ChatGPT的进程。然而，由于instruction数据集的开源工作较少，大模型训练需要极高计算资源等原因，目前相关的研究仍处于起始阶段，几乎被OpenAI、微软、Google、Meta等大公司垄断。我们的工作**Alpaca-CoT**在解决这两个问题上各迈出了一小步：基于Alpaca-LoRA的技术路线（单机可训）将不同的LLM集成进来以降低计算资源消耗，同时持续收集、统一格式化指令数据以搭建更方便快捷的研究平台。并且，我们提供了些细致的findings以供有相同兴趣的研究者参考。欢迎大家在我们工作的基础上作出进一步的探究和改进！
+在LLM上的IFT研究是一个impressive的方向，其加速了复现ChatGPT的进程。然而，由于instruction数据集的开源工作较少，大模型训练需要极高计算资源等原因，目前相关的研究仍处于起始阶段，几乎被OpenAI、微软、Google、Meta等大公司垄断。我们的工作**Alpaca-CoT**在解决这两个问题上各迈出了一小步：基于Alpaca-LoRA的技术路线（单机可训）将不同的LLM集成进来，以降低不同LLM的计算资源消耗，同时持续收集、统一格式化指令数据，以搭建出更方便的多接口统一的研究平台。欢迎大家在我们的平台上进行自己的研究，一起为加速复现ChatGPT而努力！
           
 ## 参考文献
 [1]: [LLaMA: Open and Efficient Foundation Language Models](https://arxiv.org/abs/2302.13971v1)
