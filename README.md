@@ -26,13 +26,14 @@ Alpaca-CoT: An Instruction Fine-Tuning Platform with Instruction Data Collection
 
 ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的潜力。基于LLaMA[1]等Large Language Models(LLMs)的instruction-tuning研究(如，Alpaca[2])大幅度加速了复现ChatGPT的进程。**Alpaca-CoT**希望在这个研究方向上做出适度的贡献，以推进LLMs的开源进程、降低LLMs研究和使用成本。
 
-具体来说，**Alpaca-CoT**项目旨在探究如何更好地通过instruction-tuning的方式来诱导LLM具备类似ChatGPT的交互和instruction-following能力。为此，我们广泛收集了不同类型的instruction（尤其是Chain-of-Thought数据集），并将包含LLaMA、ChatGLM、Bloom等多种LLMs集成进来统一接口。在这基础上，我们基于LLaMA给出了深入细致的实证研究，以供未来工作参考。据我们所知，我们是首个将CoT拓展进Alpaca的工作，因此项目简称为"**Alpaca-CoT**"。
+具体来说，**Alpaca-CoT**项目旨在探究如何更好地通过instruction-tuning的方式来诱导LLM具备类似ChatGPT的交互和instruction-following能力。为此，我们广泛收集了不同类型的instruction（尤其是Chain-of-Thought）数据集，并将包含LLaMA、ChatGLM、Bloom在内的多种LLMs集成进来统一接口。在这基础上，我们基于LLaMA给出了深入细致的实证研究，以供未来工作参考。据我们所知，我们是首个将CoT拓展进Alpaca的工作，因此项目简称为"**Alpaca-CoT**"。
 
 
 热烈欢迎您向我们提供任何未被本项目收集的instruction-tuning及各类tasks数据集（或其来源）。我们将：
 - 将这些数据收录并进行统一格式化处理；
 - 用这些数据集instruct fine-tune 一系列的LLM（如llama, ,未来将集成更多LLMs），并开源其checkpoint；
 - 进行广泛的实证研究以探究新收录的数据集的作用。
+热烈欢迎您
 
 我们希望我们的项目能够为大型语言模型的开源过程做出适度的贡献，并降低NLP研究人员上手LLM相关研究的门槛。
 
