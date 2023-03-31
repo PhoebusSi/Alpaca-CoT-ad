@@ -31,7 +31,7 @@ ChatGPT的出现验证了大型语言模型(LLM)在通用人工智能(AGI)上的
 
 热烈欢迎您向我们提供任何未被本项目收集的instruction-tuning及各类tasks数据集（或其来源）。我们将：
 - 将这些数据收录并进行统一格式化处理，并注明来源；
-- 用这些数据集instruct fine-tune一系列的LLM（如llama, ChatGLM等），并开源其checkpoint；
+- 用这些数据集instruction finetune 一系列的LLM（如llama, ChatGLM等），并开源其checkpoint；
 - 进行广泛的实证研究以探究新收录的数据集的作用。
 
 同时也欢迎您向我们指出(general或特定能力上)表现不错的开源LLM，我们将：
